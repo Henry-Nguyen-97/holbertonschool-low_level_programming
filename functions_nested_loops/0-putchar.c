@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdio.c>
 
 int main/**Print _putchar then a new line*/ (void)
 {
