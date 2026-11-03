@@ -2,7 +2,7 @@
 
 int main/**Print alphabet*/ (void)
 {
-  _putcha(print_alphabet());
-  _putcha('\n');
+  _putchar(print_alphabet());
+  _putchar('\n');
   return (0);
 }
