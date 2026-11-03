@@ -14,11 +14,8 @@ int main(void)
 	/* your code goes there */
 	
 	r = n % 10;
+	r = abs(r);
 
-	if (r < 0)
-		{
-		r = -r;
-		}
 	if (r > 5)
 		{
 		printf("Last digit of %d is %u and is greater than 5\n", n, r);
