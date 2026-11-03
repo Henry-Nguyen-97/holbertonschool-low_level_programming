@@ -2,15 +2,15 @@
 
 void print_alphabet(void)
 {
-char letter;
-int time = 0;
-if (time <= 10)
+
+char l;
+int t;
+for (t = 1; t <= 10; t++)
 {
-for (letter = 'a'; letter <= 'z'; letter++)
+for (l = 'a'; l <= 'z'; l++)
 {
-_putchar(letter);
-_putchar('\n');
+_putchar(l);
 }
-time++
+_putchar('\n');
 }
 }
