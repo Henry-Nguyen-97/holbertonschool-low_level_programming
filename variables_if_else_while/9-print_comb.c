@@ -16,7 +16,7 @@ putchar (' ');
 }
 else if (num == 9)
 {
-putchar (' ');
+putchar ('\n');
 }
 num++;
 }
