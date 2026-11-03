@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-int main(void)
+int main/*Find last digit*/(void)
 {
 	int n;
 	int r;
