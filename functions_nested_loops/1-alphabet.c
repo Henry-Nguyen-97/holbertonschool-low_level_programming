@@ -2,6 +2,7 @@
 
 int main/**Print alphabet*/ (void)
 {
-  print_alphabet();
+  _putcha(print_alphabet());
+  _putcha('\n');
   return (0);
 }
