@@ -4,6 +4,6 @@
 
 int main/**Print _putchar then a new line*/ (void)
 {
-printf ("_putchar\n");
+printf("_putchar\n");
 return (0);
 }
