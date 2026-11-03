@@ -13,7 +13,7 @@ if (num < 9)
 putchar (num + '0');
 putchar (',');
 putchar (' ');
-} else
+} else if (num == 9)
 {
 putchar (num + '0');
 }
