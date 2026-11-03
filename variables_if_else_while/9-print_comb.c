@@ -15,7 +15,7 @@ putchar (',');
 putchar (' ');
 } else if (num == 9)
 {
-putchar ('$');
+putchar (' ');
 }
 num++;
 }
