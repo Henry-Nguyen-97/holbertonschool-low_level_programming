@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void my_printf(char name[]);
+void write(char name[]);
 
 #endif
