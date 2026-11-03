@@ -1,8 +1,9 @@
 #include "main.h"
 
-int main/**Print alphabet*/ (void)
+  void print_alphabet/**Print alphabet*/(void)
 {
-  print_alphabet();
+  char l;
+  for (l = 'a'; l <= z; l++)
+  _putchar(l);
   _putchar('\n');
-  return (0);
 }
