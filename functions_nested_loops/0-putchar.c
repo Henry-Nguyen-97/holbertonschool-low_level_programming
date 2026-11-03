@@ -1,5 +1,4 @@
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 int main/**Print _putchar then a new line*/ (void)
 {
