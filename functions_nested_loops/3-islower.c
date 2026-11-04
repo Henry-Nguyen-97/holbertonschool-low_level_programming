@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _islower(int c)
+int _islower/*Check if input is a lowercase letter*/(int c)
 {
 if (c >= 'a' && c <= 'z')
 {
