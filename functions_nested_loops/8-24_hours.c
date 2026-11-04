@@ -17,9 +17,9 @@ _putchar (':');
 _putchar ('0' + m / 10);
 _putchar ('0' + m % 10);
 _putchar ('\n');
-m = 0;
 m++;
 }
+m = 0;
 h++;
 }
 }
