@@ -9,10 +9,10 @@ return ('1' - '0');
 }
 else if (c >= 'A' && c <= 'Z')
 {
-return ('1' - '0');
+return (1);
 }
 else
 {
-return ('0' - '0');
+return (0);
 }
 }
