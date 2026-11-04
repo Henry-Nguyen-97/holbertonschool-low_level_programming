@@ -14,7 +14,7 @@ int n2;
 n2 = 0;
 while /*While 2nd number <= 9*/(n2 <= 9)
 {
-r = n1 * n2;
+r = n1 *n2;
 if /*If result > 10, print first digit and last digit*/(r >= 10)
 {
 _putchar ('0' + r / 10);
