@@ -1,7 +1,7 @@
 #include "main.h"
 /*This is header source file, not main file*/
 
-int _islower/*return value '0' spaces on from '1' or '0'*/(int c)
+int _isalpha/*return value '0' spaces on from '1' or '0'*/(int c)
 {
 if (c >= 'a' && c <= 'z')
 {
