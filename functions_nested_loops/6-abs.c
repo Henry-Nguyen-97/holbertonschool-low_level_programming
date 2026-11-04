@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _abs(int n)
+int _abs/*Calculate absolute value*/(int n)
 {
 if (n < 0)
 {
