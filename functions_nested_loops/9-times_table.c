@@ -15,19 +15,28 @@ void times_table(void)
           while (n2 <= 9)
             {
               r = n1 * n2;
-              if (r >= 10)
+              if (r >= 10 && n2 != 9)
               {
                 _putchar ('0' + r / 10);
                 _putchar ('0' + r % 10);
                 _putchar (',');
                 _putchar (' ');
               }
-              else
+              else if (r >= 10 && n2 == 9)
+              {
+                _putchar ('0' + r / 10);
+                _putchar ('0' + r % 10);
+              }
+              else if (r < 10 && n2 != 9)
               {
                 _putchar ('0' + r);
                 _putchar (',');
                 _putchar (' ');
                 _putchar (' ');
+              }
+              else if (r < 10 && n2 == 9)
+              {
+                _putchar ('0' + r);
               }
               n2++;
             }
