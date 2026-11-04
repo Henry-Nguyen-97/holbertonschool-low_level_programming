@@ -44,6 +44,5 @@ n--;
 /* Print the final 98 followed by a newline */
 _putchar('9');
 _putchar('8');
-_putchar(' ');
 _putchar('\n');
 }
