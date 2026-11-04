@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _islower(int c)
+int _islower/*return value '0' space on ASCII from '1' or '0' depending on the value of c*/(int c)
 {
 if (c >= 'a' && c <= 'z')
 {
