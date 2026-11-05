@@ -8,6 +8,6 @@ int _isupper/* Check if letter is uppercase */(int c)
 	}
 	else
 	{
-	return (0);
+		return (0);
 	}
 }
