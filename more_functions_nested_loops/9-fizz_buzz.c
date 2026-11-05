@@ -35,6 +35,6 @@ int main/*Print 1 to 100*/(void)
 			n++;
 		}
 	}
-	printf("100\n");
+	printf("Buzz\n");
 	return (0);
 }
