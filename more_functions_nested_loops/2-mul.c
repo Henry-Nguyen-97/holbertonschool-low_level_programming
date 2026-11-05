@@ -2,5 +2,5 @@
 
 int mul/* Multiply 2 numbers*/(int a, int b)
 {
-	return (a *b);
+	return (a * b);
 }
