@@ -4,7 +4,7 @@ void print_line/* Print line */(int n)
 {
 	int l;
 
-	l = 0;
+	l = 1;
 
 	if (n > 0) /* Print line if n is greater than 0 */
 	{
