@@ -2,14 +2,14 @@
 
 void print_numbers/* Print number from 0 to 9 */(void)
 {
-	int d;
+int d;
 
-	d = '0';
+d = '0';
 
-	while (d <= '9')
-	{
-		_putchar(d);
-		d++;
-	}
-	_putchar('\n');
+while (d <= '9')
+{
+_putchar(d);
+d++;
+}
+_putchar('\n');
 }
