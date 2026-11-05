@@ -9,11 +9,11 @@ void print_triangle/* Print triangle */(int size)
 		row = 1;
 
 		while (row <= size)
-        /* While row <= size, do the commands, go down 1 line, add 1 to row*/
-        	{
+		/* While row <= size, do the commands, go down 1 line, add 1 to row*/
+		{
 			int col;
 			int space;
-            
+
 			col = 1;
 
 			space = size - row;
