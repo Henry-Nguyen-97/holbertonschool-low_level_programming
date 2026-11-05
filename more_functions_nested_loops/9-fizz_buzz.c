@@ -8,7 +8,7 @@ int main/*Print 1 to 100*/(void)
 
 	n = 1;
 
-	while (n <= 100)
+	while (n < 100)
 	{
 		/* Replace multiple of 3 & 5 */
 		if (n % 3 == 0 && n % 5 == 0)
@@ -35,6 +35,6 @@ int main/*Print 1 to 100*/(void)
 			n++;
 		}
 	}
-	printf("\n");
+	printf("100\n");
 	return (0);
 }
