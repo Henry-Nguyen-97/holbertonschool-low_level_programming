@@ -2,7 +2,7 @@
 
 void print_numbers(void)
 {
-	int i;
+	int d;
 
 	d = '0';
 
