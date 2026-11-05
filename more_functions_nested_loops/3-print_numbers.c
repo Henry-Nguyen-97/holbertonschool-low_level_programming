@@ -1,15 +1,20 @@
 #include "main.h"
 
-void print_numbers/* Print number from 0 to 9 */(void)
+/**
+ *print_numbers- prints the numbers 0 - 9 followed by a newline.
+ *Return: returns nothing since its return type is void
+ */
+
+void print_numbers(void)
 {
-	int d;
+	int i;
 
-	d = '0';
+	i = '0';
 
-	while (d <= '9')
+	while (i <= '9')
 	{
-		_putchar(d);
-		d++;
+		_putchar(i);
+		i = i + 1;
 	}
 	_putchar('\n');
 }
