@@ -8,7 +8,8 @@ void print_square/* Print squares */(int size)
 
 		row = 1;
 
-		while (row <= size) /* While row <= size, do the col commands, go down 1 line, add 1 to row*/
+		while (row <= size)
+		/* While row <= size, do the col commands, go down 1 line, add 1 to row*/
 		{
 			int col;
 
