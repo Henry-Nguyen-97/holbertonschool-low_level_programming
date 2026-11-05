@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 int main (void)
@@ -10,8 +10,21 @@ int main (void)
 
 	while (n <= 100)
 	{
-		printf("%d ", n);
-		n++;
+		if (n % 3 == 0)
+		{
+			printf("Fizz ");
+			n++;
+		}
+		else if (n % 5 == 0)
+		{
+			printf("Buzz ");
+			n++;
+		}
+		else
+		{
+			printf("%d ", n);
+			n++;
+		}
 	}
 	return (0);
 }
