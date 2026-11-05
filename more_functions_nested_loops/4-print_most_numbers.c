@@ -1,6 +1,6 @@
 #include "main.h"
 
-void print_most_numbers(void)
+void print_most_numbers/* Print 0 to 9 except 2 4 */(void)
 {
 	int d;
 	d = '0';
