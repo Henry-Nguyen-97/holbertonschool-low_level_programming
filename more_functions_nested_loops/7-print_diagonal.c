@@ -11,7 +11,9 @@ l = 0;
 		while (l < n) /* While l is less than n*/
 		{
 			int s;
+			
 			s = 0;
+			
 			while (s <= l) /* While s is less than l */
 			{
 				if (s != 0) /* If s is not 0 add a space than increase s */
