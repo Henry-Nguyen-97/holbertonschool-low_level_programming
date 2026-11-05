@@ -34,7 +34,7 @@ int main/*Print 1 to 100*/(void)
 			printf("%d ", n);
 			n++;
 		}
-		printf("\n");
 	}
+	printf("\n");
 	return (0);
 }
