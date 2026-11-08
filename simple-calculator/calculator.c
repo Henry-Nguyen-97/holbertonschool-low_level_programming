@@ -115,7 +115,7 @@ int main/* Calculator */(void)
 					while (getchar() != '\n'); /* Clear input field */
 					continue;
 				}
-				if (B == 0)
+				if (B == 0) /* Check if devider is 0 */
 				{
 					printf ("Error: division by zero");
 					while (getchar() != '\n'); /* Clear input field */
