@@ -5,9 +5,10 @@
 
 int main/* Calculator */(void)
 {
-	printf ("Welcome to simple calculator");
+	printf ("Welcome to simple calculator\n");
 	printf
 	(
+		"\n"
 		"Simple calculator\n"
 		"1) Add\n"
 		"2) Subtract\n"
