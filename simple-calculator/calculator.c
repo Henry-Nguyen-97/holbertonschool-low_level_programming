@@ -100,7 +100,29 @@ int main/* Calculator */(void)
 			}
 			else if (choice == 4)
 			{
-				printf ("Not implemented");
+				printf ("Choice: 4 - Division\n");
+				printf ("A: ");
+				if (scanf ("%f", &A) != 1) /* If input is not an float */
+				{ /* Reject input */
+					printf ("Invalid input");
+					while (getchar() != '\n'); /* Clear input field */
+					continue;
+				}
+				printf ("B: ");
+				if (scanf ("%f", &B) != 1) /* If input is not an float */
+				{ /* Reject input */
+					printf ("Invalid input");
+					while (getchar() != '\n'); /* Clear input field */
+					continue;
+				}
+				if (B == 0)
+				{
+					printf ("Error: division by zero");
+					while (getchar() != '\n'); /* Clear input field */
+					continue;
+				}
+				result = (A / B);
+				printf ("Result: %f", result);
 				continue;
 			}
 			else
