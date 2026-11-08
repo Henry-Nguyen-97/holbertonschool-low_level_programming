@@ -10,7 +10,7 @@
   - 2- Subtract
   - 3- Multiply
   - 4- Divide
-  - 0- Quit - Quit the program
+  - 0- Quit: Quit the program
 
 - Numeric behavior (interger vs decimal)
 
