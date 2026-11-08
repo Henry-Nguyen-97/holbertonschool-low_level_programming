@@ -14,4 +14,4 @@ Supported operations:\
 \
 Numeric behavior (interger vs decimal)\
 \
-Known limitations\
+Known limitations
