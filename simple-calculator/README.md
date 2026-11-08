@@ -7,7 +7,7 @@
   - In terminal, run ./calculator
 
 - Supported operations:
-  - 1- Add
+  - 1- Add: Calculate the sum of 2 numbers
   - 2- Subtract
   - 3- Multiply
   - 4- Divide
