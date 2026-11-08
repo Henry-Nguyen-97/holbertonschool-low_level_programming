@@ -1,6 +1,6 @@
 ## Notes
 
-- Compile command:
+- Compile command:\
   -gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 
 - Run instructions:
