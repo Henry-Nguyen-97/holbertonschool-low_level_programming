@@ -6,7 +6,7 @@ Compile command:\
 Run instructions:\
 \
 Supported operations:\
-	  1) Add\
+	  >1) Add\
 	  2) Subtract\
 	  3) Multiply\
 	  4) Divide\
