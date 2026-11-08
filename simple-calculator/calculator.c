@@ -32,7 +32,7 @@ int main/* Calculator */(void)
 			}
 			if (choice == 0)
 			{
-				printf ("Quitting. Bye!");
+				printf ("Quitting. Bye!\n");
 				break;
 			}
 			else if (choice == 1) /* Addition operation */
