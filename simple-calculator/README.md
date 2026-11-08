@@ -9,7 +9,7 @@
 - Supported operations:
   - 1- Add: Addition of 2 numbers
   - 2- Subtract: Subtract number A by number B
-  - 3- Multiply
+  - 3- Multiply: Multiplication of 2 numbers
   - 4- Divide
   - 0- Quit: Quit the program
 
