@@ -56,7 +56,7 @@ int main/* Calculator */(void)
 				printf ("Result: %f", result);
 				continue;
 			}
-			else if (choice == 2) /* Addition operation */
+			else if (choice == 2) /* Subtraction operation */
 			{
 				printf ("Choice: 2 - Subtraction\n");
 				printf ("A: ");
@@ -77,7 +77,28 @@ int main/* Calculator */(void)
 				printf ("Result: %f", result);
 				continue;
 			}
-			else if (choice >= 3 && choice <= 4)
+			else if (choice == 3) /* Multiplication operation */
+			{
+				printf ("Choice: 3 - Multiplication\n");
+				printf ("A: ");
+				if (scanf ("%f", &A) != 1) /* If input is not an float */
+				{ /* Reject input */
+					printf ("Invalid input");
+					while (getchar() != '\n'); /* Clear input field */
+					continue;
+				}
+				printf ("B: ");
+				if (scanf ("%f", &B) != 1) /* If input is not an float */
+				{ /* Reject input */
+					printf ("Invalid input");
+					while (getchar() != '\n'); /* Clear input field */
+					continue;
+				}
+				result = (A * B);
+				printf ("Result: %f", result);
+				continue;
+			}
+			else if (choice == 4)
 			{
 				printf ("Not implemented");
 				continue;
