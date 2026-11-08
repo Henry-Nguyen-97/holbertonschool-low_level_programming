@@ -1,17 +1,17 @@
 ## Notes
 
-- Compile command:\
-  -gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator\
+- Compile command:
+  -gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 
-- Run instructions:\
+- Run instructions:
 
-- Supported operations:\
+- Supported operations:
   - 1) Add
   - 2) Subtract
   - 3) Multiply
   - 4) Divide
   - 0) Quit
-\
-- Numeric behavior (interger vs decimal)\
-\
+
+- Numeric behavior (interger vs decimal)
+
 - Known limitations
