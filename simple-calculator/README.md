@@ -4,6 +4,7 @@
   - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 
 - Run instructions:
+  - In terminal, run ./calculator
 
 - Supported operations:
   - 1- Add
