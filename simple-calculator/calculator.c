@@ -7,9 +7,9 @@ int main/* Calculator */(void)
 {
 	int input;
 	printf ("Welcome to simple calculator\n");
-	while (1)
+	while (1) /* Infinite loop until meet a condition */
 		{
-			printf
+			printf /* Print menu */
 			(
 				"\n"
 			"Simple calculator\n"
@@ -19,11 +19,11 @@ int main/* Calculator */(void)
 			"4) Divide\n"
 			"0) Quit\n"
 			);
-			printf ("Input: ");
-			if (scanf ("%d", &input) != 1)
-			{
+			printf ("Input: "); /* Ask for input */
+			if (scanf ("%d", &input) != 1) /* If input is not an interger */
+			{ /* Reject input */
 				printf ("Invalid, please enter a number between 1 and 4");
-				while (getchar() != '\n');
+				while (getchar() != '\n'); /* Clear input field */
 				continue;
 			}
 			if (input == 0)
