@@ -6,9 +6,9 @@
 int main/* Calculator */(void)
 {
 	int choice;
-	int A;
-	int B;
-	int result;
+	float A;
+	float B;
+	float result;
 
 	printf ("Welcome to simple calculator\n");
 	while (1) /* Infinite loop until meet a condition */
@@ -39,11 +39,21 @@ int main/* Calculator */(void)
 			{
 				printf ("Choice: 1 - Addition\n");
 				printf ("A: ");
-				scanf ("%d", &A);
+				if (scanf ("%f", &A) != 1) /* If input is not an float */
+				{ /* Reject input */
+					printf ("Invalid input");
+					while (getchar() != '\n'); /* Clear input field */
+					continue;
+				}
 				printf ("B: ");
-				scanf ("%d", &B);
-				result = A + B;
-				printf ("Result: %d", result);
+				if (scanf ("%f", &B) != 1) /* If input is not an float */
+				{ /* Reject input */
+					printf ("Invalid input");
+					while (getchar() != '\n'); /* Clear input field */
+					continue;
+				}
+				result = (A + B);
+				printf ("Result: %f", result);
 				continue;
 			}
 			else if (choice >= 2 && choice <= 4)
