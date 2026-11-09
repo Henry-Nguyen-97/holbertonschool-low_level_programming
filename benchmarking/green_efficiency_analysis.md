@@ -19,5 +19,6 @@ OBSERVED PERFORMANCE DIFFERENCES
   - PROCESS seconds: 0.000199 seconds.
   - REDUCE seconds: 0.000085 seconds.
   - All three phases run through 50,000 iterations.
+
 In comparison_algorithms experiment, count_even_naive implementation is inefficient compared to the count_even_single_pass implementation. It takes ~2.471431 seconds to run through 1,250,025,000 interations. That means for 100,000,000 it would consume ~0.197711 seconds of CPU usage. This implementation is inefficient when compared to the baseline of ~0.089803 seconds of CPU usage per 100,000,000 interations.\
 count_even_single_pass run through much less interations and consume less CPU usage time than count_even_naive. But if it needs to run 100,000,000 iterations, it would take ~0.204 seconds of CPU usage which is more than the baseline and also more than what count_even_naive consumes.
