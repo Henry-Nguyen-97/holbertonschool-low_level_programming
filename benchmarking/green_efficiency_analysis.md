@@ -1,7 +1,7 @@
 ## Green Efficiency Analysis
 
 MEASUREMENT METHODOLOGY:\
-For this analysis, three different experiments were conducted.\
+For this analysis, three different experiments were conducted.
 - baseline_loop: Establishing a baseline after three runs, which resulted in an average of ~0.0898027 seconds of CPU usage per 100,000,000 interations.
 - comparison_algorithms: Comparing 2 different implementations to solve an issue.
   - count_even_naive: Ignoring that this implementations provides an incorrect result. After three runs, an average of ~2.471431 seconds of CPU usage per 1,250,025,000 interations.
