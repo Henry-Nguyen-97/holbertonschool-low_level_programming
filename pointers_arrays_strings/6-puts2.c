@@ -19,4 +19,5 @@ void puts2/* Print every other char */(char *str)
 		_putchar (str[position]); /* Print data at position */
 		position += 2; /* Increase position by 2*/
 	}
+	_putchar ('\n');
 }
