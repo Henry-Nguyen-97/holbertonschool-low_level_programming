@@ -4,7 +4,7 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 { /* Only get the first encounterd numbers */
 	int position;
 	int sign;
-	int number;
+	unsigned int number;
 
 	position = 0;
 	sign = 1;
