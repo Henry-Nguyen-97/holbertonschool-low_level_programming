@@ -9,8 +9,8 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 	position = 0;
 	sign = 1;
 
-	/* Infinite loop until finding a starting number */
-	while (1)
+	/* Loop until end or finding a starting number */
+	while (s[position] != '\0')
 	{
 		if (s[position] == '-')
 		{
@@ -25,19 +25,26 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 		position++;
 	}
 
-	number = 0;
-	/*
-	* While the current data and next are both numbers
-	* Get the number then move to the next position
-	*/
-	while (s[position] >= '0' && s[position] <= '9' &&
-		s[position + 1] >= '0' && s[position + 1] <= '9')
+	if (s[position] == '\0')
 	{
-		number = (number * 10) + (s[position] - '0');
-		position++;
+		return (0);
 	}
-
-	/* Get the last number */
-	number = (number * 10) + (s[position] - '0');
-	return (number * sign);
+	else
+	{
+		number = 0;
+		/*
+		* While the current data and next are both numbers
+		* Get the number then move to the next position
+		*/
+		while (s[position] >= '0' && s[position] <= '9' &&
+			s[position + 1] >= '0' && s[position + 1] <= '9')
+		{
+			number = (number * 10) + (s[position] - '0');
+			position++;
+		}
+	
+		/* Get the last number */
+		number = (number * 10) + (s[position] - '0');
+		return (number * sign);
+	}
 }
