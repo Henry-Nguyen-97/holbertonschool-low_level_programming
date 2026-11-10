@@ -2,10 +2,10 @@
 
 void rev_string/* Reverse a string */(char *s)
 {
-        int length;
-        int lpos; /* left position */
-        int rpos; /* right position */
-        int memory;
+	int length;
+	int lpos; /* left position */
+	int rpos; /* right position */
+	int memory;
 
 	length = 0;
 
