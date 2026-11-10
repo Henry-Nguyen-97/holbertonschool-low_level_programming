@@ -25,11 +25,12 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 		position++;
 	}
 
+	/* If reach the end and no number found, return 0 */
 	if (s[position] == '\0')
 	{
 		return (0);
 	}
-	else
+	else /* Else get the number */
 	{
 		number = 0;
 		/*
