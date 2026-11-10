@@ -15,7 +15,7 @@ int main/* Calculator */(void)
 		{
 			printf /* Print menu */
 			(
-				"\n"
+			"\n"
 			"Simple calculator\n"
 			"1) Add\n"
 			"2) Subtract\n"
