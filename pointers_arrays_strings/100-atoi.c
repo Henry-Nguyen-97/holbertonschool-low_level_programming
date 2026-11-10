@@ -4,9 +4,9 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 {
 	int position;
 	int sign;
+	int number;
 
 	position = 0;
-
 	/*
 	* While data at position is space or anything from ASCII table 9 to 13
 	* (\t, \n, \v, \f, \r)
@@ -18,7 +18,6 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 	}
 
 	sign = 1;
-
 	/*
 	* If data at position is a negative sign, set variable to -1
 	* Else keep variable as 1
@@ -31,6 +30,13 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 	}
 	else
 	{
+		position++;
+	}
+
+	number = 0;
+	while (s[position] >= '0' && s[position] <= '9')
+	{
+		number = ((number * 10) + (s[position] - '0'));
 		position++;
 	}
 }
