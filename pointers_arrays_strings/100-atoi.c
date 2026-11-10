@@ -43,7 +43,7 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 			number = (number * 10) + (s[position] - '0');
 			position++;
 		}
-	
+
 		/* Get the last number */
 		number = (number * 10) + (s[position] - '0');
 		return (number * sign);
