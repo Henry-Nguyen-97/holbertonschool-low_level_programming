@@ -14,5 +14,7 @@ char *_strcpy/* Copy pointer's target to another */(char *dest, char *src)
 		position++; /* Next position */
 	}
 	/* Set the current position of dest to null */
-	dest[postion] = '\0';
+	dest[position] = '\0';
+
+	return (dest); /* Return the data */
 }
