@@ -30,7 +30,7 @@ int _atoi/* Convert string in array into int numbers */(char *s)
 	* While the current data and next are both numbers
 	* Get the number then move to the next position
 	*/
-	while 	(s[position] >= '0' && s[position] <= '9' &&
+	while (s[position] >= '0' && s[position] <= '9' &&
 		s[position + 1] >= '0' && s[position + 1] <= '9')
 	{
 		number = (number * 10) + (s[position] - '0');
