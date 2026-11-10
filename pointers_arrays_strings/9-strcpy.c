@@ -9,7 +9,7 @@ char *_strcpy/* Copy pointer's target to another */(char *dest, char *src)
         /* While data at current position of src is not null */
         while (src[position] != '\0')
         {
-                /* Set data at current position of dest to data at current position of src */
+                /* Set data at current position of dest to of src */
                 dest[position] = src[position];
                 position++; /* Next position */
         }
