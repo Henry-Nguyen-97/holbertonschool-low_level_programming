@@ -1,6 +1,6 @@
 #include "main.h"
 
-void puts_half(char *str)
+void puts_half/* Print half of the data */(char *str)
 {
 	int length;
 	int h2; /* "2nd half" variable */
