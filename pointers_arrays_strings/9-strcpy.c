@@ -1,15 +1,18 @@
 #include "main.h"
 
-char *_strcpy/* Copy data from 1 pointer's target to another */(char *dest, char *src)
+char *_strcpy/* Copy pointer's target to another */(char *dest, char *src)
 {
         int position;
 
         position = 0;
 
-        while (src[position] != '\0') /* While data at current position of src is not null */
+        /* While data at current position of src is not null */
+        while (src[position] != '\0')
         {
-                dest[position] = src[position]; /* Set data at current position of dest to data at current position of src */
+                /* Set data at current position of dest to data at current position of src */
+                dest[position] = src[position];
                 position++; /* Next position */
         }
-        dest[postion] = '\0'; /* Set the current position of dest to null */
+        /* Set the current position of dest to null */
+        dest[postion] = '\0';
 }
