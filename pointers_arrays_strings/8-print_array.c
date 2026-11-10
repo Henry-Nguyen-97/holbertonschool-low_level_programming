@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 #include <stdio.h>
 
 void print_array/* Print elements in an array */(int *a, int n)
