@@ -19,5 +19,5 @@ void print_array/* Print elements in an array */(int *a, int n)
 		}
 		element++;
 	}
-	printf('\n');
+	printf("\n");
 }
