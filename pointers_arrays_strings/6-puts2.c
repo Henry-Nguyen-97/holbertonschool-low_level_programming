@@ -11,12 +11,8 @@ void puts2/* Print every other char */(char *str)
 		if (position % 2 == 0)
 		{
 			_putchar(str[position]);
-			position++;
 		}
-		else
-		{
 			position++;
-		}
 	}
 	_putchar('\n');
 }
