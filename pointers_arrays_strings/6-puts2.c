@@ -2,7 +2,7 @@
 
 void puts2/* Print every other char */(char *str)
 {
-	int position;
+	long position;
 
 	position = 0;
 
