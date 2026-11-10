@@ -2,17 +2,17 @@
 
 char *_strcpy/* Copy pointer's target to another */(char *dest, char *src)
 {
-        int position;
+	int position;
 
-        position = 0;
+	position = 0;
 
-        /* While data at current position of src is not null */
-        while (src[position] != '\0')
-        {
-                /* Set data at current position of dest to of src */
-                dest[position] = src[position];
-                position++; /* Next position */
-        }
-        /* Set the current position of dest to null */
-        dest[postion] = '\0';
+	/* While data at current position of src is not null */
+	while (src[position] != '\0')
+	{
+		/* Set data at current position of dest to of src */
+		dest[position] = src[position];
+		position++; /* Next position */
+	}
+	/* Set the current position of dest to null */
+	dest[postion] = '\0';
 }
