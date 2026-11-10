@@ -7,7 +7,7 @@ void puts2/* Print every other char */(char *str)
 
         length = 0;
 
-        while (str[length] =! '\0') /* Find length */
+        while (str[length] != '\0') /* Find length */
         {
                 length++;
         }
@@ -16,14 +16,7 @@ void puts2/* Print every other char */(char *str)
 
         while (position <= length)
         {
-                if (position % 2 != 0) /* If position is odd */
-                {
-                        _putchar (str[position]); /* Print data at position */
-                        position++;
-                }
-                else /* Else don't print */
-                {
-                        position++;
-                }
+                _putchar (str[position]); /* Print data at position */
+                position += 2; /* Increase position by 2*/
         }
 }
