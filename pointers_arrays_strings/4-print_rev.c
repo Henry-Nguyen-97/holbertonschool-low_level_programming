@@ -3,6 +3,7 @@
 void print_rev/* Print in reverse */(char *s)
 {
 	int length;
+	int position;
 
 	length = 0;
 
@@ -10,8 +11,6 @@ void print_rev/* Print in reverse */(char *s)
 	{
 		length++;
 	}
-
-	int position;
 
 	position = length - 1; /* Set position to 2nd last, avoid '\0' */
 
