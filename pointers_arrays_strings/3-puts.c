@@ -2,9 +2,9 @@
 
 void _puts(char *str)
 {
-	int length;
-
-	length = 0;
-
-	while ()
+	while (*str != '\0')
+	{
+		_putchar (*str);
+		*str++;
+	}
 }
