@@ -10,11 +10,11 @@ void print_array(int *a, int n)
 	{
 		if (element < n - 1)
 		{
-			printf ("%d, ", a[element]);
+			printf("%d, ", a[element]);
 		}
 		else
 		{
-			printf ("%d\n", a[element]);
+			printf("%d\n", a[element]);
 		}
 		element++;
 	}
