@@ -13,6 +13,10 @@ void puts2/* Print every other char */(char *str)
 			_putchar(str[position]);
 			position++;
 		}
+		else
+		{
+			position++;
+		}
 	}
 	_putchar('\n');
 }
