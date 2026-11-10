@@ -23,7 +23,7 @@ void puts_half/* Print half of the data */(char *str)
 		h2 = (length + 1) / 2;
 	}
 
-	while ( h2 < length)
+	while (h2 < length)
 	{
 		_putchar (str[h2]);
 		h2++;
