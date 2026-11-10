@@ -20,12 +20,10 @@ void rev_string/* Reverse a string */(char *s)
 
         while (lpos < rpos) /* While left position is left of right position */
         {
-                memory = s[lpos]; /* Save data at left position to memory */
+        	memory = s[lpos]; /* Save data at left position to memory */
                 s[lpos] = s[rpos]; /* Save data at right position to left position */
                 s[rpos] = memory; /* Save data from memory to right position */
                 lpos++; /* Move left position 1 to the right */
                 rpos--; /* Move right position 1 to the left */
         }
-
-        return; /* Return the string data */
 }
