@@ -37,4 +37,4 @@ The relation between runtime and energy consumption is roughly linear. Complicat
 - Runtime and energy consumption relation: Even though runtime does affect energy consumption. It is not the only element to do so. So solving runtime will not completely solve energy consumption.
 
 ## PRACTICAL ENGINEERING TAKEAWAY
-Complicated codes with complicated logic should be avoided. By optimizing our codes we reduce iterations that the machine must go through and in turn reduce runtime. And with less runtime, less energy is consumed, which mean less energy need to be generated. Reducing green house gas emission from energy plant. Software engineer must be efficient with their codes and make them more green.
+Complicated codes with complicated logic should be avoided. By optimizing our codes we reduce iterations that the machine must go through and in turn reduce runtime. And with less runtime, less energy is consumed, which mean less energy need to be generated. Reducing green house gas emission from energy plants. Software engineer must be efficient with their codes and make them more green.
