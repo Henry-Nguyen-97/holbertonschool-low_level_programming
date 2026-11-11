@@ -1,6 +1,6 @@
 # Green Efficiency Analysis
 
-## MEASUREMENT METHODOLOGY:\
+## MEASUREMENT METHODOLOGY:
 All programs are compiled with gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-long-long.\
 All programs are run on the same machine.\
 instrumentation_lab.c was modified to add runtime measurement of each phase.
@@ -27,8 +27,14 @@ count_even_single_pass run through much less interations with just 50,000 and co
 
 In instrumentation_lab experiment, BUILD_DATA phase consumes the most CPU usage time and REDUCE phase consumes the least CPU usage time.\
 
-## RELATION BETWEEN RUNTIME AND ENERGY CONSUMPTION\
+## RELATION BETWEEN RUNTIME AND ENERGY CONSUMPTION
 The relation between runtime and energy consumption is roughly linear. Complicated functions take more computing power to run which would require more CPU usage time. Loops that require more iterations take longer to run whichi would require more CPU usage time. And the longer the CPU run, the more energy it consumes. It is usually represented by the physics equation Energy = Power * Time. As more time is needed to solve a problem, more energy is needed for it to run.\
 
-## LIMITATIONS OF THE EXPERIMENT\
+## LIMITATIONS OF THE EXPERIMENT
+- Small sample size: All programs were only run and recorded three times.
+- Isolated run environment: All programs were run on a single machine.
+- Incorret result: In comparison_algorithms, despite both were meant to solve the same problem, they provided different results. This therefore can only be used as reference and not accurate representation.
+- Runtime and energy consumption relation: Even though runtime does affect energy consumption. It is not the only element to do so. So solving runtime will not completely solve energy consumption.
 
+## PRACTICAL ENGINEERING TAKEAWAY
+Complicated codes with complicated logic should be avoided. By optimizing our codes we reduce iterations that the machine must go through and in turn reduce runtime. And with less runtime, less energy is consumed, which mean less energy need to be generated. Reducing green house gas emission from energy plant. Software engineer must be efficient with their codes and make them more green.
