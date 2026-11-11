@@ -13,7 +13,9 @@ char *_strncat/* Just for betty */(char *dest, char *src, int n)
 	index = 0;
 
 	/* Save start position of dest */
-	char *dest_start = dest;
+	char *dest_start;
+	
+	*dest_start = dest;
 
 	/* While data at current position at dest is not null */
 	while (*dest != '\0')
