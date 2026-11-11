@@ -1,6 +1,6 @@
 ## Green Efficiency Analysis
 
-#MEASUREMENT METHODOLOGY:\
+###MEASUREMENT METHODOLOGY:\
 All programs are compiled with gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-long-long.\
 All programs are run on the same machine.\
 instrumentation_lab.c was modified to add runtime measurement of each phase.
