@@ -14,7 +14,7 @@ char *_strncat/* Just for betty */(char *dest, char *src, int n)
 
 	/* Save start position of dest */
 	char *dest_start = dest;
-	
+
 	/* While data at current position at dest is not null */
 	while (*dest != '\0')
 	{
@@ -38,5 +38,5 @@ char *_strncat/* Just for betty */(char *dest, char *src, int n)
 	}
 	/* Put a null at the end of dest when finish */
 	*dest = '\0';
-    return (dest_start);
+	return (dest_start);
 }
