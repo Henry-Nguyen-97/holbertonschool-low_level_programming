@@ -8,13 +8,12 @@ char *_strncat/* Just for betty */(char *dest, char *src, int n)
 	* because can't compare pointer to interger
 	*/
 	int index;
-	/* index would serve as replacement for position at src */
+	char *dest_start;
 
+	/* index would serve as replacement for position at src */
 	index = 0;
 
 	/* Save start position of dest */
-	char *dest_start;
-	
 	*dest_start = dest;
 
 	/* While data at current position at dest is not null */
