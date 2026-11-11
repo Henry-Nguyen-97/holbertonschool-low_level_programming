@@ -23,12 +23,12 @@ For this analysis, three different experiments were conducted.
   - All three phases run through 50,000 iterations.
 
 In comparison_algorithms experiment, count_even_naive implementation is inefficient compared to the count_even_single_pass implementation. It takes count_even_native implementations more CPU usage time having to run much more iterations than count_even_single_pass.\
-count_even_single_pass run through much less interations with just 50,000 and consume less CPU usage time at ~0.000102 than count_even_naive.\
+count_even_single_pass run through much less interations with just 50,000 and consume less CPU usage time at ~0.000102 than count_even_naive.
 
-In instrumentation_lab experiment, BUILD_DATA phase consumes the most CPU usage time and REDUCE phase consumes the least CPU usage time.\
+In instrumentation_lab experiment, BUILD_DATA phase consumes the most CPU usage time and REDUCE phase consumes the least CPU usage time.
 
 ## RELATION BETWEEN RUNTIME AND ENERGY CONSUMPTION
-The relation between runtime and energy consumption is roughly linear. Complicated functions take more computing power to run which would require more CPU usage time. Loops that require more iterations take longer to run whichi would require more CPU usage time. And the longer the CPU run, the more energy it consumes. It is usually represented by the physics equation Energy = Power * Time. As more time is needed to solve a problem, more energy is needed for it to run.\
+The relation between runtime and energy consumption is roughly linear. Complicated functions take more computing power to run which would require more CPU usage time. Loops that require more iterations take longer to run whichi would require more CPU usage time. And the longer the CPU run, the more energy it consumes. It is usually represented by the physics equation Energy = Power * Time. As more time is needed to solve a problem, more energy is needed for it to run.
 
 ## LIMITATIONS OF THE EXPERIMENT
 - Small sample size: All programs were only run and recorded three times.
