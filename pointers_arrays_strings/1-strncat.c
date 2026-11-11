@@ -1,9 +1,12 @@
 #include "main.h"
 
-char *_strncat/* Append n byte(s) of string from src to dest */(char *dest, char *src, int n)
+/* Append n byte(s) of string from src to dest */
+char *_strncat/* Just for betty */(char *dest, char *src, int n)
 {
-	/* Declaring a var to compare to n
-	* because can't compare pointer to interger */
+	/*
+	* Declaring a var to compare to n
+	* because can't compare pointer to interger
+	*/
 	int index;
 	/* index would serve as replacement for position at src */
 
@@ -19,8 +22,10 @@ char *_strncat/* Append n byte(s) of string from src to dest */(char *dest, char
 		dest++;
 	}
 
-	/* While index < n
-	* And data at current position at src is not null */
+	/*
+	*While index < n
+	* And data at current position at src is not null
+	*/
 	while (index < n && *src != '\0')
 	{
 		/* Copy data from src to dest */
