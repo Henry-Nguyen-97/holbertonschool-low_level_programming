@@ -23,7 +23,7 @@ int is_sep(char c)
 
 char *cap_string/* Make every word start with a cap letter */(char *str)
 {
-	int t;
+	int i;
 
 	i = 0;
 	while (str[i] != '\0')
