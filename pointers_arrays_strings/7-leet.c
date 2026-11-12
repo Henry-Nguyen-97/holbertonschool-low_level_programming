@@ -11,6 +11,7 @@ char *leet/* Replace some letters with numbers */(char *str)
 
 	while (str[input_pos])
 	{
+		array_pos = 0;
 		while (letters[array_pos])
 		{
 			if (str[input_pos] == letters[array_pos])
