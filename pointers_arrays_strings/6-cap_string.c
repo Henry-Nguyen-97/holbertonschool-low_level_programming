@@ -1,6 +1,6 @@
 #include "main.h"
 
-int is_sep/* Make every word start with a cap letter */(char c)
+int is_sep (char c)
 {
 	char sep[] = " \t\n,;.!?\"(){}";
 	int i;
@@ -21,7 +21,7 @@ int is_sep/* Make every word start with a cap letter */(char c)
 	}
 }
 
-char *cap_string(char *str)
+char *cap_string/* Make every word start with a cap letter */(char *str)
 {
 	int t;
 
