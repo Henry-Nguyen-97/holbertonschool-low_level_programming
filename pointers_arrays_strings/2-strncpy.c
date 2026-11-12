@@ -19,7 +19,7 @@ char *_strncpy/* Copy string from src to dest */(char *dest, char *src, int n)
 	* While index < n
 	* And data at current position at src is not null
 	*/
-	while (index < n && *src != '\0')
+	while (index < n && src[index] != '\0')
 	{
 		/* Copy data from src to dest */
 		dest[index] = src[index];
