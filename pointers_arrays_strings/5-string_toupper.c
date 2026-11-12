@@ -15,5 +15,5 @@ char *string_toupper/* For betty */(char *str)
 		}
 		c++;
 	}
-	return (c);
+	return (str);
 }
