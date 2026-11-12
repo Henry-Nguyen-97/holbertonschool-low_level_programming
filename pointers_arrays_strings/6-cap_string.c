@@ -30,7 +30,7 @@ char *cap_string/* Make every word start with a cap letter */(char *str)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			if (i == 0 || is_sep(ste[i - 1]))
+			if (i == 0 || is_sep(str[i - 1]))
 			{
 				str[i] -= 32;
 			}
