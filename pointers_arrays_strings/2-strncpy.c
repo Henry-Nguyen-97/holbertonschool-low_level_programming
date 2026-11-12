@@ -2,7 +2,6 @@
 
 char *_strncpy/* Copy string from src to dest */(char *dest, char *src, int n)
 {
-
 	/*
 	* Declaring a var to compare to n
 	* because can't compare pointer to interger
