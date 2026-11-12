@@ -1,6 +1,6 @@
 #include "main.h"
 
-int is_sep(char c)
+int is_sep/* Chect for seperator */(char c)
 {
 	char sep[] = " \t\n,;.!?\"(){}";
 	int i;
