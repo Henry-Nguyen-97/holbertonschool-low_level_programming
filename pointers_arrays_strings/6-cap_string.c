@@ -12,13 +12,10 @@ int is_sep(char c)
 		if (c == sep[i])
 		{
 			return (1);
-			i++;
 		}
-		else
-		{
-			return (0);
-		}
+		i++;
 	}
+	return (0);
 }
 
 char *cap_string/* Make every word start with a cap letter */(char *str)
