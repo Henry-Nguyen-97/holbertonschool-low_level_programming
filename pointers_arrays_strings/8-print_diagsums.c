@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <<stdio.h>>
+#include <stdio.h>
 
 void print_diagsums/* For betty */(int *a, int size)
 {
