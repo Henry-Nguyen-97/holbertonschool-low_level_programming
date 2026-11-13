@@ -8,7 +8,7 @@ char *_strpbrk/* For betty */(char *s, char *accept)
 {
 	int index;
 
-	while (*s)
+	while (*s) /* While *s != NULL */
 	{
 		index = 0;
 
