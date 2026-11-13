@@ -22,5 +22,5 @@ char *_strpbrk/* For betty */(char *s, char *accept)
 		}
 		s++;
 	}
-	return (NULL);
+	return (0);
 }
