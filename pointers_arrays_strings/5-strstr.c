@@ -1,5 +1,6 @@
 #include "main.h"
 
+/* Find in *haystack the exact string from *needle. */
 char *_strstr/* For betty */(char *haystack, char *needle)
 {
 	int index;
