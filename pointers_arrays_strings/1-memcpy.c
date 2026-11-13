@@ -1,4 +1,4 @@
-$include "main.h"
+#include "main.h"
 
 /* Copy n data from src point to, to what dest point to */
 char *_memcpy/* For betty */(char *dest, char *src, unsigned int n)
