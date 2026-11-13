@@ -23,5 +23,5 @@ void print_diagsums/* For betty */(int *a, int size)
 		index -= (size - 1);
 	}
 
-	printf ("%d, %d\n", value1, value2);
+	printf("%d, %d\n", value1, value2);
 }
