@@ -1,36 +1,26 @@
 #include "main.h"
 
-char *_strpbrk(char *s, char *accept)
+/*
+* Find the 1st char in *s that match any char in *accept
+* Return point to that char in *s
+*/
+char *_strpbrk/* For betty */(char *s, char *accept)
 {
-	unsigned int count;
 	int index;
-	int found;
-
-	count = 0;
 
 	while (*s)
 	{
-		found = 0;
 		index = 0;
 
-        while (accept[index] != '\0')
-        {
+		while (accept[index] != '\0')
+		{
 			if (*s == accept[index])
 			{
-				found = 1;
-				break;
+				return (s);
 			}
 			index++;
 		}
-		if (!found)
-		{
-			break;
-		}
-		else
-		{
-			count++;
-			s++;
-		}
+		s++;
 	}
-	return (count);
+	return (NULL);
 }
