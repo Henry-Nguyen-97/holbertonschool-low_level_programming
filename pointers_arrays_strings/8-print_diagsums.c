@@ -8,6 +8,8 @@ void print_diagsums/* For betty */(int *a, int size)
 	int sum2;
 
 	index = 0;
+	sum1 = 0;
+	sum2 = 0;
 
 	while (index < (size * size))
 	{
@@ -23,5 +25,5 @@ void print_diagsums/* For betty */(int *a, int size)
 		index -= (size - 1);
 	}
 
-	printf("%d, %d\n", value1, value2);
+	printf("%d, %d\n", sum1, sum2);
 }
