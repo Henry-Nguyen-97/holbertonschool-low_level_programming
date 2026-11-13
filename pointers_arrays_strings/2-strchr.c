@@ -11,5 +11,5 @@ char *_strchr/* For betty */(char *s, char c)
 		}
 		s++;
 	}
-	return (NULL);
+	return ('\0');
 }
