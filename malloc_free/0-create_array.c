@@ -1,5 +1,6 @@
 #include "main.h"
 
+/* Create an array of size with memory allocated, then pass a value into all slots */
 char *create_array/* Create array */(unsigned int size, char c)
 {
 	char *array;
