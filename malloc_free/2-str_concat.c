@@ -4,7 +4,7 @@ char *str_concat/* For betty */(char *s1, char *s2)
 {
 	int size1, size2, index;
 	char *array;
-	
+
 	if (s1 == NULL)
 	{
 		s1 = "";
