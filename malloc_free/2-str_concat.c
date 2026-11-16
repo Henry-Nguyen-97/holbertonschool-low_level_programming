@@ -1,5 +1,6 @@
 #include "main.h"
 
+/* Get 2 strings, return "" for each NULL, find size of each, allocate memory - return NULL of allocate 0, concatenate, retun result */
 char *str_concat/* For betty */(char *s1, char *s2)
 {
 	int size1, size2, index;
