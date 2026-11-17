@@ -1,5 +1,6 @@
 #include "main.h"
 
+/* Create an array that store values from min to max */
 int *array_range/* For betty */(int min, int max)
 {
 	int *memory;
@@ -10,6 +11,7 @@ int *array_range/* For betty */(int min, int max)
 		return (NULL);
 	}
 
+	/* Size of the array */
 	size = max - min + 1;
 
 	memory = malloc(sizeof(int) * size);
