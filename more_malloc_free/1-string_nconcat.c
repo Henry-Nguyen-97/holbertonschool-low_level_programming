@@ -31,7 +31,7 @@ char *string_nconcat/* For betty */(char *s1, char *s2, unsigned int n)
 	{
 		size2 = n;
 	}
-	
+
 	memory = malloc(sizeof(char) * (size1 + size2) + 1);
 
 	if (memory == NULL)
