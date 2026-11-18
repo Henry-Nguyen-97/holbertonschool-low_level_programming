@@ -45,16 +45,16 @@ int main() {
 	
 	// Display the address of the struct, and the fields inside them
 	printf("Cat address: %p\n", &cat);
-	printf("Cat field addresses: %p, %p\n", &cat.c, &cat.d);
+    printf("Cat field addresses: %c, %c\n", cat.c, cat.d);
 
-	printf("Dog address: %p\n", &dog);
-	printf("Dog field addresses: %p, %p\n", &dog.i, &dog.c);
+    printf("Dog address: %p\n", &dog);
+    printf("Dog field addresses: %d, %c\n", dog.i, dog.c);
 
-	printf("Bird address: %p\n", &bird);
-	printf("Bird field addresses: %p, %p\n", &bird.i, &bird.j);
+    printf("Bird address: %p\n", &bird);
+    printf("Bird field addresses: %d, %d\n", bird.i, bird.j);
 
-	printf("Mouse address: %p\n", &mouse);
-	printf("Mouse field addresses: %p, %p\n", &mouse.c, &mouse.i);
+    printf("Mouse address: %p\n", &mouse);
+    printf("Mouse field addresses: %c, %d\n", mouse.c, mouse.i);
 
 	return (0);
 }
