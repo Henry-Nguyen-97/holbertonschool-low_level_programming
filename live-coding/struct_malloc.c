@@ -44,7 +44,17 @@ int main() {
 	mouse.i = 4;
 	
 	// Display the address of the struct, and the fields inside them
+	printf("Cat address: %p\n", &cat);
+	printf("Cat field addresses: %p, %p\n", &cat.c, &cat.d);
 
+	printf("Dog address: %p\n", &dog);
+	printf("Dog field addresses: %p, %p\n", &cat.i, &cat.c);
+
+	printf("Bird address: %p\n", &cat);
+	printf("Bird field addresses: %p, %p\n", &cat.i, &cat.j);
+
+	printf("Mouse address: %p\n", &cat);
+	printf("Mouse field addresses: %p, %p\n", &cat.c, &cat.i);
 
 	return (0);
 }
