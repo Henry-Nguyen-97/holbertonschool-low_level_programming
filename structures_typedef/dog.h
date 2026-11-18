@@ -4,7 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct dog /* Declaring custom data types */
+/**
+* struct dog - Declaring custom data types
+* @name: The dog's name
+* @age: The dog's age
+* @owner: The owner's name
+*/
+
+struct dog
 {
 	char *name;
 	float age;
