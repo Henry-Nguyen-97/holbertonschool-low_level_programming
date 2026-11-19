@@ -1,6 +1,6 @@
 #include "dog.h"
 
-dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog/* For betty */(char *name, float age, char *owner)
 {
 	int name_size, owner_size, index;
 	char *name_copy, *owner_copy;
