@@ -10,7 +10,7 @@
 * @size: the size of the array
 * @cmp: point to the function needed to be called
 */
-int int_index(int *array, int size, int (*cmp)(int))
+int int_index/* for betty */(int *array, int size, int (*cmp)(int))
 {
         int i;
 
