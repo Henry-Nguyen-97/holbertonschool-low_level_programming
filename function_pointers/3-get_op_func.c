@@ -1,0 +1,23 @@
+#include "3-calc.h"
+
+int (*get_op_func(char *s))(int, int)
+{
+	op_t ops[] =
+	{
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int i;
+
+	i = 0;
+
+	while (s != NULL && ops[i].op != NULL && strcmp(ops[i].op, s) != 0)
+	{
+		i++;
+	}
+	return (s != NULL ? ops[i].f : NULL);
+}
