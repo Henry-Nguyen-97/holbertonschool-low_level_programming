@@ -7,7 +7,7 @@
 * The data "name" points to accept char type
 * @name: the name to be printed
 * @f: pointer to the function that prints the name
-* 
+*
 * Return: Nothing.
 */
 void print_name(char *name, void (*f)(char *))
