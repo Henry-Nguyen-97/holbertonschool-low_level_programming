@@ -13,12 +13,14 @@ int main(int argc, char *argv[])
 	int n1, n2;
 	char *op;
 
+	/* Check for valid argument counts from command line. program execution, number 1, operator, number 2. 4 total */
 	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
 
+	/* Check for valid operator. The get_op_func() function already check this so just check if it return NULL */
 	op = argv[2];
 	if (get_op_func(op) == NULL)
 	{
@@ -26,7 +28,9 @@ int main(int argc, char *argv[])
 		return (99);
 	}
 
+	/* atoi() convert strings to intergers for operations */
 	n2 = atoi(argv[3]);
+	/* Check if divide or modular by 0 */
 	if ((*op == '/' || *op == '%') && n2 == 0)
 	{
 		printf("Error\n");
@@ -34,6 +38,7 @@ int main(int argc, char *argv[])
 	}
 
 	n1 = atoi(argv[1]);
+	/* Call the function that would call the operation functions. Then print the result */
 	printf("%d\n", get_op_func(op)(n1, n2));
 
 	return (0);
