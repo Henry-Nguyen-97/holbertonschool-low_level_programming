@@ -6,11 +6,11 @@
 #include <string.h>
 
 /**
- * get_op_func - selects the function matching an operator
- * @s: the operator as a string
- *
- * Return: pointer to the matching function, or NULL if none matches
- */
+* get_op_func - selects the function matching an operator
+* @s: the operator as a string
+*
+* Return: pointer to the matching function, or NULL if none matches
+*/
 typedef struct op
 {
 	char *op;
