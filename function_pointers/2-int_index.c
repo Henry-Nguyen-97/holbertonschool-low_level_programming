@@ -16,7 +16,7 @@ int i;
 
 if (size <= 0)
 {
-        return (-1);
+return (-1);
 }
 
 i = 0;
