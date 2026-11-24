@@ -1,13 +1,13 @@
 #include "3-calc.h"
 
 /**
- * main - performs simple operations from the command line
- * @argc: the number of command-line arguments
- * @argv: array of the command-line arguments
- *
- * Return: 0 on success, 98 for a wrong argument count, 99 for an invalid
- * operator, 100 for division or modulo by zero
- */
+* main - performs simple operations from the command line
+* @argc: the number of command-line arguments
+* @argv: array of the command-line arguments
+*
+* Return: 0 on success, 98 for a wrong argument count, 99 for an invalid
+* operator, 100 for division or modulo by zero
+*/
 int main(int argc, char *argv[])
 {
 	int n1, n2;
