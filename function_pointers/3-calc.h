@@ -6,10 +6,10 @@
 #include <string.h>
 
 /**
- * struct op - Struct op
+ * get_op_func - selects the function matching an operator
+ * @s: the operator as a string
  *
- * @op: The operator
- * @f: The function associated
+ * Return: pointer to the matching function, or NULL if none matches
  */
 typedef struct op
 {
