@@ -29,4 +29,12 @@ void print_string(va_list *args)
 void print_all(const char * const format, ...)
 {
 	va_list args;
+
+	type_t arr[] = {
+	{'c', print_char},
+	{'i', print_int},
+	{'f', print_float},
+	{'s', print_string},
+	{'\0', NULL}
+	};
 }
