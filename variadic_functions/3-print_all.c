@@ -12,13 +12,20 @@ void print_int(va_list *args)
 
 void print_float(va_list *args)
 {
-	printf("%f%", va_arg(*args, double));
+	printf("%f", va_arg(*args, double));
 }
 
 void print_string(va_list *args)
 {
-	printf("%s", va_arg(*args, int));
+	char *str;
+	str = va_arg(*args, char*);
+	if (str == NULL)
+	{
+		str = "(nil)";
+	}
+	printf("%s", str);
 }
+
 void print_all(const char * const format, ...)
 {
 	va_list args;
