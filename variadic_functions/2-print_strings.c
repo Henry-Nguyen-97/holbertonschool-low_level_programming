@@ -4,7 +4,7 @@
 * print_strings - Print n string arguments
 * separated by separator
 * @separator: The separator argument to be printed
-* not printed if separator == NULL
+* print nothing if separator == NULL
 * @n: Number of string arguments to be printed
 * print (nil) if argument == NULL
 *
@@ -39,7 +39,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (i < n - 1)
 	{
 		x = va_arg(args, char *);
-		printf("%s%s", x != NULL ? x : "(nil)", s);
+		printf("%s%s", x != NULL ? x : "(nil)", s); /* Print string if it's not NULL, print (nil) if it's NULL */
 		i++;
 	}
 	x = va_arg(args, char *);
