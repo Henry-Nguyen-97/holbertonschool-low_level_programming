@@ -15,17 +15,19 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int x;
 
+	/* Check that n > 0, print a new line if not */
 	if (n < 1)
 	{
 		printf("\n");
 		return;
 	}
 
+	/* Print nothing separator == NULL */
 	if (separator == NULL)
 	{
 		s = "";
 	}
-	else
+	else /* Else print the separator */
 	{
 		s = separator;
 	}
@@ -34,12 +36,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	i = x = 0;
 
+	/* Print all arguments except the last one */
 	while (i < n - 1)
 	{
 		x = va_arg(args, int);
 		printf("%d%s", x, s);
 		i++;
 	}
+	/* Print the last argument */
 	x = va_arg(args, int);
 	printf("%d\n", x);
 
