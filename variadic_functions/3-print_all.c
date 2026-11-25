@@ -1,20 +1,36 @@
 #include "variadic_functions.h"
 
+/**
+ * print_char - prints a char argument
+ * @args: pointer to the list of arguments
+ */
 void print_char(va_list *args)
 {
 	printf("%c", va_arg(*args, int));
 }
 
+/**
+ * print_int - prints an int argument
+ * @args: pointer to the list of arguments
+ */
 void print_int(va_list *args)
 {
 	printf("%d", va_arg(*args, int));
 }
 
+/**
+ * print_float - prints a float argument
+ * @args: pointer to the list of arguments
+ */
 void print_float(va_list *args)
 {
 	printf("%f", va_arg(*args, double));
 }
 
+/**
+ * print_string - prints a string argument, or (nil) if it is NULL
+ * @args: pointer to the list of arguments
+ */
 void print_string(va_list *args)
 {
 	char *str;
@@ -26,9 +42,18 @@ void print_string(va_list *args)
 	printf("%s", str);
 }
 
+/**
+ * print_all - prints anything, based on a format string
+ * @format: list of the types of the arguments (c, i, f, s)
+ *
+ * Description: any other character in format is ignored, and a new line
+ * is printed at the end
+ */
 void print_all(const char * const format, ...)
 {
 	va_list args;
+	int pos, i;
+	char *s;
 
 	type_t arr[] = {
 	{'c', print_char},
@@ -37,4 +62,26 @@ void print_all(const char * const format, ...)
 	{'s', print_string},
 	{'\0', NULL}
 	};
+
+	va_start(args, format);
+
+		pos = 0;
+		s = "";
+		while (format != NULL && format[pos] != '\0')
+		{
+			i = 0;
+			while (arr[i].letter != '\0')
+			{
+				if (arr[i].letter == format[pos])
+				{
+					printf("%s", s);
+					arr[i].print_function(&args);
+					s = ", ";
+				}
+				i++;
+			}
+			pos++;
+		}
+		printf("\n");
+	va_end(args);
 }
