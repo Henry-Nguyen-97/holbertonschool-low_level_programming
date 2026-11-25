@@ -56,6 +56,7 @@ void print_all(const char * const format, ...)
 	int pos, i;
 	char *s;
 
+	/* A typedef struct is declared in the .h file to make the type_t data type for the array */
 	type_t arr[] = {
 	{'c', print_char},
 	{'i', print_int},
@@ -68,13 +69,16 @@ void print_all(const char * const format, ...)
 
 		pos = 0;
 		s = "";
-		while (format != NULL && format[pos] != '\0')
+		while (format != NULL && format[pos] != '\0') /* This is looping the input of format */
 		{
 			i = 0;
-			while (arr[i].letter != '\0')
-			{
+			while (arr[i].letter != '\0') /* This is looping the letters (1st elements) of the array, comparing to input of format, to get the correct function (2nd elements) */
+			{ /* We are not looping the input arguments since they don't need to be checked, they just need to be printed in order with the correct data type according to the order in format */
 				if (arr[i].letter == format[pos])
 				{
+					/** Print the separator before the arguments to avoid leaving a separator after the last argument
+					* Made separator = "" first to avoid printing it before the 1st argument, then make it become ", " or whatever after printing the 1st argument
+					*/
 					printf("%s", s);
 					arr[i].print_function(&args);
 					s = ", ";
