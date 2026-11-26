@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 {
 	int i, r, n;
 
-	if (argc < 2)
+	if (argc < 2) /* This block can be removed. If there is no argument, argc = 1. And i = 1 so while (i < argc) is false and the loop never run. r = 0 mean the function would print 0 and exit */
 	{
 		printf("0\n");
 		return (0);
