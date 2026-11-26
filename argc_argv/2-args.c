@@ -4,7 +4,6 @@
 * main - print program name and all arguments
 * @argc: Argument count + program name
 * @argv: Argument vectors (arguments's data)
-* @i: index
 *
 * Return: 0 - Success
 */
