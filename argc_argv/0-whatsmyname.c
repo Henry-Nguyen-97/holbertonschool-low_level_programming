@@ -7,7 +7,7 @@
 *
 * Return: 0 - Success
 */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	(void)argc; /* Mark as unused so no compiler error */
 	printf("%s\n", argv[0]);
