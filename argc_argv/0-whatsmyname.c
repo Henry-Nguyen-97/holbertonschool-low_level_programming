@@ -2,7 +2,7 @@
 
 /**
 * main - print program name
-* @argc: Argument count
+* @argc: Argument count + program name
 * @argv: Argument vectors (the arguments' data)
 *
 * Return: 0 - Success
